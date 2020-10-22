@@ -1,5 +1,7 @@
 package com.course.distributecommunication.books.models;
 
+import com.course.distributecommunication.books.dto.BookDto;
+
 public class Book
 {
     private int id;
@@ -52,5 +54,9 @@ public class Book
     public Book withPages(int pages) {
         this.setPages(pages);
         return this;
+    }
+
+    public BookDto toDto() {
+        return new BookDto(id, title, pages, authorId);
     }
 }

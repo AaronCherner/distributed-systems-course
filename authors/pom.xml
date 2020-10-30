@@ -7,6 +7,7 @@
         <artifactId>course-distributecommunication</artifactId>
         <version>0.0.2</version>
     </parent>
+    <groupId>com.course.distributecommunication.authors</groupId>
     <artifactId>course-distributecommunication-authors</artifactId>
     <version>0.0.2</version>
     <name>course-distributecommunication-authors</name>

@@ -6,8 +6,11 @@ public class BookDto {
     private int pages;
     private int authorId;
 
-    public BookDto(int id) {
+    public BookDto(int id, String title, int pages, int authorId) {
         this.id = id;
+        this.title = title;
+        this.pages = pages;
+        this.authorId = authorId;
     }
 
     public BookDto() {}

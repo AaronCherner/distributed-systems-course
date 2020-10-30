@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "com.tradeix.core.grpc.authors";
+option java_outer_classname = "AuthorsProto";
+
+service AuthorsService {
+    rpc GetAllAuthors(google.protobuf.Empty) returns (AllAuthorsResponse);
+}
+
+message AllAuthorsResponse {
+    repeated AuthorDto authors = 1;
+}
+
+message AuthorDto {
+    int32 id = 1;
+    string firstName = 2;
+    string lastName = 3;
+}

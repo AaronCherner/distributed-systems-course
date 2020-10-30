@@ -1,7 +1,8 @@
 package com.course.distributecommunication.authors.models;
 
-public class Author
-{
+import com.course.distributecommunication.authors.dto.AuthorDto;
+
+public class Author {
     private int id;
     private String firstName;
     private String lastName;
@@ -38,5 +39,9 @@ public class Author
     public Author withLastName(String lastName) {
         this.setLastName(lastName);
         return this;
+    }
+
+    public AuthorDto toDto() {
+        return new AuthorDto(id, firstName, lastName);
     }
 }

@@ -28,7 +28,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/.name
-/libraries/*
-/encodings.xml
-DistributedCommStubs-master/.idea

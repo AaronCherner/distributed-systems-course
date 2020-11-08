@@ -1,9 +1,10 @@
 package com.course.distributecommunication.books.services;
 
-import java.util.Collection;
-import java.util.HashMap;
 import com.course.distributecommunication.books.models.Book;
 import org.springframework.stereotype.Component;
+
+import java.util.Collection;
+import java.util.HashMap;
 
 @Component
 public class BookService
@@ -21,6 +22,10 @@ public class BookService
 
     public Collection<Book> getBooks() {
         return this.books.values();
+    }
+
+    public void putBook(Book book) {
+        books.put(book.getId(), book);
     }
 
     public Book findById(int id) {

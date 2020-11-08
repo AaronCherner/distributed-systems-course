@@ -11,6 +11,12 @@ public class Author {
         this.id = id;
     }
 
+    public Author(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public int getId() {
         return id;
     }
@@ -39,6 +45,15 @@ public class Author {
     public Author withLastName(String lastName) {
         this.setLastName(lastName);
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 
     public AuthorDto toDto() {

@@ -2,8 +2,7 @@ package com.course.distributecommunication.books.models;
 
 import com.course.distributecommunication.books.dto.BookDto;
 
-public class Book
-{
+public class Book {
     private int id;
     private String title;
     private int pages;
@@ -11,6 +10,13 @@ public class Book
 
     public Book(int id) {
         this.id = id;
+    }
+
+    public Book(int id, String title, int pages, int authorId) {
+        this.id = id;
+        this.title = title;
+        this.pages = pages;
+        this.authorId = authorId;
     }
 
     public int getId() {

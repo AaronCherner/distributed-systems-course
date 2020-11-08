@@ -5,8 +5,10 @@ public class AuthorDto {
     private String firstName;
     private String lastName;
 
-    public AuthorDto(int id) {
+    public AuthorDto(int id, String firstName, String lastName) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public AuthorDto() {}
